@@ -20,7 +20,9 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+#currentDay {
+  font-weight: bold;
+}
 .description {
   white-space: pre-wrap;
 }
