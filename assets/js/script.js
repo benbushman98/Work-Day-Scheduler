@@ -1,6 +1,6 @@
 // Timer
 setInterval(() => {
-    $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+    $('#currentDay').text(moment().format('MMMM Do YYYY, H:mm:ss a'));
 });
 // End Timer
 
@@ -43,21 +43,20 @@ function timeChanger () {
     var hour = moment(today, 'h:mm:ss A').format('HH:mm:ss');
     var curHour = $('.past');
     var hourVal = document.getElementById("5PM").textContent;
-
     var timeNum = parseInt(hourVal);
     var hourNumber = parseInt(hour)
-    console.log (hour)
+    // console.log (hour)
     
     if (hourNumber > timeNum) {
-        console.log( "past");
+        // console.log( "past");
     } else if (hourNumber === timeNum) {
         curHour.removeClass('past');
         curHour.addClass('present');
-        console.log('present');
+        // console.log('present');
     } else if (hourNumber < timeNum) {
         curHour.removeClass('past');
         curHour.addClass('future');
-        console.log("future");
+        // console.log("future");
     }
 }
 // End of Code for Color Change
