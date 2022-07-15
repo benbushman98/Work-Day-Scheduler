@@ -35,20 +35,24 @@ $('.saveBtn').on("click", function() {
 // End Local Storage Code
 timeChanger();
 function timeChanger () {
-    setInterval(() => {
+    today = moment();
+    var hour = moment(today, 'h:mm:ss A').format('HH:mm:ss');
     var curHour = $('.past');
-    var hour = (moment().format('h'));
+    var hourVal = document.getElementById("5PM").textContent;
 
-        if (hour > $('.hour').val()) {
+    var timeNum = parseInt(hourVal);
+    var hourNumber = parseInt(hour)
+    console.log (hour)
+    
+    if (hourNumber > timeNum) {
         console.log( "past");
-    } else if (hour === $('.hour').val()) {
+    } else if (hourNumber === timeNum) {
         curHour.removeClass('past');
         curHour.addClass('present');
         console.log('present');
-    } else if (hour < $('.hour').val()) {
+    } else if (hourNumber < timeNum) {
         curHour.removeClass('past');
         curHour.addClass('future');
         console.log("future");
     }
-    },1000);
 }
