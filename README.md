@@ -5,7 +5,7 @@ Don't waste any more time during the day lost on what you should be doing. Git o
 <br></br>
 
 ## Screenshot
-![Screenshot of what the webpage looks like](assets/img/work-day-scheduler.gif)
+![Screenshot of what the webpage looks like](assets/img/Work-Day-Scheduler.gif)
 
 <br></br>
 
